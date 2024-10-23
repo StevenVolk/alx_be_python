@@ -27,6 +27,6 @@ class Library:
             if title == book.title:
                 self.book.return_book()
 
-    def list_available_books():
-        for book in books:
+    def list_available_books(self):
+        for book in self._books:
             print("{book.title} by {book.author}")
